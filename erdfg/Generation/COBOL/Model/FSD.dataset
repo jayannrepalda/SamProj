@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.wdz.devtools.dataset:DatasetApplication xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.etools.wdz.devtools.dataset="http:///com/ibm/etools/wdz/devtools/dataset.ecore">
+  <inDataset xsi:type="com.ibm.etools.wdz.devtools.dataset:BatchVSAMDataset" fileInternalName="IN-INTERNAL-FILE" fileStatusVariableName="IN-FILE-STATUS" vSAMCodeVariableName="IN-VSAM-CODE">
+    <record xsi:type="com.ibm.etools.wdz.devtools.dataset:VSAMKSDSDatasetRecord" minRecordSize="1" maxRecordSize="80" recordVariableName="IN-FILE-RECORD" recordLengthVariableName="IN-FILE-RECORD-LENGTH" recordKeyVariableName="IN-RECORD-KEY" alternateRecordKeyVariableName="IN-ALT-RECORD-KEY" recordKeyLength="8" alternateRecordKeyLength="8"/>
+  </inDataset>
+  <outDataset xsi:type="com.ibm.etools.wdz.devtools.dataset:BatchQSAMDataset" fileExternalName="SYSOUT" fileInternalName="OUT-INTERNAL-FILE" fileStatusVariableName="OUT-FILE-STATUS" datasetCategory="QSAM">
+    <record xsi:type="com.ibm.etools.wdz.devtools.dataset:QSAMDatasetRecord" minRecordSize="1" maxRecordSize="80" recordVariableName="OUT-FILE-RECORD" recordLengthVariableName="OUT-FILE-RECORD-LENGTH"/>
+  </outDataset>
+</com.ibm.etools.wdz.devtools.dataset:DatasetApplication>
